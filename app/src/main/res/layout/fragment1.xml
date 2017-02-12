@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        style="@style/Fragment">
+
+        <TextView
+            style="@style/RiddleHeader"
+            android:id="@+id/RiddleHeader"
+            android:text="Riddle 1" />
+
+        <TextView
+            android:text="@string/Riddle_OrangesAndApples"
+            style="@style/Riddle"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:id="@+id/RadioGroup">
+            <RadioButton
+                android:id="@+id/RadioButton1"
+                style="@style/RadioButton"
+                android:text="1  (S)" />
+            <RadioButton
+                android:id="@+id/RadioButton2"
+                style="@style/RadioButton"
+                android:text="3  (M)"/>
+            <RadioButton
+                android:id="@+id/RadioButton3"
+                style="@style/RadioButton"
+                android:text="6  (L)"/>
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/HintButton"
+                android:id="@+id/HintButton"
+                android:text="@string/Hint" />
+
+            <TextView
+                android:id="@+id/HintText1"
+                style="@style/HintText"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/AnswerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/AnswerButton"
+                android:id="@+id/AnswerButton"
+                android:text="@string/Answer" />
+
+            <TextView
+                android:id="@+id/Solution1"
+                style="@style/AnswerText"
+                android:text="@string/Answer1" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

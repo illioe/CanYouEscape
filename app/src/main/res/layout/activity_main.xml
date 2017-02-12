@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.android.canyouescape.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ScrollView>
+    <View
+        style="@style/Yellow_Border_Thick" />
+
+    <TextView
+        style="@style/Intro_Title"
+        android:text="@string/Intro_title" />
+
+    <LinearLayout
+        android:id="@+id/centralLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <View
+            style="@style/Yellow_Border_Thin" />
+
+        <RelativeLayout
+            android:id="@+id/central_banner"
+            style="@style/central_Banner">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:src="@drawable/lock_grand"
+                android:layout_centerHorizontal="true"
+                android:padding="16dp"
+                android:tint="@color/Yellow"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/Yellow_Border_Thin" />
+
+    </LinearLayout>
+
+
+    <EditText
+        style="@style/NameField"
+        android:layout_below="@id/centralLinearLayout"
+        android:hint="@string/Name_Field"
+        android:singleLine="true"/>
+
+    <View
+        style="@style/Yellow_Border_Thick"
+        android:layout_alignParentBottom="true"/>
+
+    <Button android:text="@string/NextButton"
+        android:id="@+id/NextButton"
+        style="@style/NextButton" />
+
+</RelativeLayout>

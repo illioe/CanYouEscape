@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        style="@style/Fragment">
+
+        <TextView
+            style="@style/RiddleHeader"
+            android:id="@+id/RiddleHeader"
+            android:text="Riddle 2" />
+
+        <TextView
+            android:text="@string/Riddle_OrangesAndApples"
+            style="@style/Riddle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableRow
+                    style="@style/TableRow">
+
+                    <CheckBox
+                        style="@style/CheckBox_Style"
+                        android:text="1"/>
+
+                    <TextView
+                        style="@style/Letter_Style"
+                        android:text="(T)"/>
+                </TableRow>
+
+
+                <TableRow
+                    style="@style/TableRow">
+
+                    <CheckBox
+                        style="@style/CheckBox_Style"
+                        android:text="2"/>
+
+                    <TextView
+                        style="@style/Letter_Style"
+                        android:text="(S)"/>
+                </TableRow>
+
+                <TableRow
+                    style="@style/TableRow">
+
+                    <CheckBox
+                        style="@style/CheckBox_Style"
+                        android:text="3"/>
+
+                    <TextView
+                        style="@style/Letter_Style"
+                        android:text="(M)"/>
+                </TableRow>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableRow
+                    style="@style/TableRow">
+
+                    <CheckBox
+                        style="@style/CheckBox_Style"
+                        android:text="6"/>
+
+                    <TextView
+                        style="@style/Letter_Style"
+                        android:text="(L)"/>
+                </TableRow>
+
+
+                <TableRow
+                    style="@style/TableRow">
+
+                    <CheckBox
+                        style="@style/CheckBox_Style"
+                        android:text="9"/>
+
+                    <TextView
+                        style="@style/Letter_Style"
+                        android:text="(P)"/>
+                </TableRow>
+
+                <TableRow
+                    style="@style/TableRow">
+
+                    <CheckBox
+                        style="@style/CheckBox_Style"
+                        android:text="12"/>
+
+                    <TextView
+                        style="@style/Letter_Style"
+                        android:text="(F)"/>
+
+                </TableRow>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/HintButton"
+                android:onClick="onClickDisplayHint"
+                android:text="@string/Hint" />
+
+            <TextView
+                android:id="@+id/Hint1"
+                style="@style/HintText"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

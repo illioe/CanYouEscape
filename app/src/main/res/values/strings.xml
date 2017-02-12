@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Can You Escape</string>
+    <string name="NextButton">Next</string>
+    <string name="Intro_title">Can You Escape?</string>
+    <string name="Name_Field">Name</string>
+    <string name="SubmitAnswers">Submit Answers</string>
+    <string name="Next_Question">Next Question</string>
+    <string name="Hint">Hint</string>
+    <string name="Answer">Answer</string>
+
+    <string name="Riddle_OrangesAndApples">In front of you are 3 boxes. One box contains only apples, another box contains only oranges, and the last contains both apples and oranges.
+        \nThe first box is labeled \"apples\", the second \"oranges\" and the third \"apples and oranges\".
+        \n
+        \nUnfortunately, all of the labels are wrong, and you have to fix them so each box has the correct label.
+
+        \nYou cannot see inside the boxes. But you can ask for a sample from any box. You point to a box and you get a random fruit from that box
+        \n
+        \nWhat is the minimum number of samples you need to label all of the boxes correctly?</string>
+    <string name="Hint1">All of the labels are wrong</string>
+    <string name="Answer1">The minimum number of sample needed is 1.
+        \nClick <a href="https://www.youtube.com/watch?v=KCT_DhnIp9E">here</a> to see full explanation.</string>
+
+</resources>
